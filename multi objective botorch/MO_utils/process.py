@@ -1,7 +1,7 @@
-from utils.folder_watch import Watcher
-from utils.data_anal_tools import *
-from utils.vapourtec_python_api import *
-from utils.datahandler import *
+from .folder_watch import Watcher
+from .data_anal_tools import *
+from .vapourtec_python_api import *
+from .datahandler import *
 from datetime import datetime
 from typing import List, Dict, Optional
 from .simulated_data import *
