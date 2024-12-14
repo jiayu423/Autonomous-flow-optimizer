@@ -1,5 +1,7 @@
 Integrating Bayesian optimization, vaportech flow reactor and HPLC into a fully automated system for reaction optimization. Current codes support two optimization approaches: single objetives using EDBO (https://github.com/b-shields/edbo) as optimizer and multiobjective using BoTorch as backend. 
+
 For the entire optimization to work properly, R-series software API (from Vapourtec) is required for Python to change parameters of the flow system. Alsom, some versions of automated HPLC sampling system is required to collect samples after the flow reactor. 
+
 The general workflow for the optimization works as follow: 
 1. User defines design spaces, hardware parameters and optimzation hyperparameters in either 'single objective edbo/single obj campaign.py' or 'multi objective botorch/MultiObj.py'. The user input fields are clearly labelled in each of those files.
 2. If no prior data available, the codes will ask the optimizer to generate a set number of initial experimental conditions. Else, it will read from the user provided data (see results folder for data format)
